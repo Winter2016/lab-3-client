@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: lab-3-client					# What set of properties will we ask the config server for?
+  profiles:
+    active: northamerica
+
+  cloud:
+    config:
+      uri: http://localhost:8001		# Where should we call the config server at?
+
+server:
+  port: 8002
